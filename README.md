@@ -1,4 +1,4 @@
-# My Photo Website
+# My Photo Website, a photo sharing website
 My Photo Website is a photo sharing website similar to Imgur, but with fewer features.\
 You can register for an account, view other people's photos, upload your own photos, and comment on photos.\
 You may also search for photos with a matching title or description.
