@@ -6,7 +6,9 @@ You may also search for photos with a matching title or description.
 This application uses MySQL, Express, and Handlebars. MySQL is the database, Express is the backend, and Handlebars is used for the frontend.\
 You will need MySQL and NodeJS to run the server.
 
-This application was made in my university's Web Development course, with a few improvements made to the application since then.
+This application was made in my university's Web Development course, with a few changes made to the application since then.
+
+#### Note: This application should only be locally hosted because it was not designed entirely with security in mind. This is more a project for learning.
 
 # Installation Instructions
 You only need to complete the installation process once.
