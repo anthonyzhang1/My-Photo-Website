@@ -1,2 +1,5 @@
-# Dependencies
-node_modules/
+# dependencies
+application/node_modules/
+
+# user uploads
+application/public/images/uploads/*

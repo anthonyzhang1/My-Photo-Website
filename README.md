@@ -35,7 +35,7 @@ Run the following commands from the terminal, assuming the current directory is 
 #### The server is now running. You can go to the website's front page by entering `localhost:3000` into your browser's address bar.
 
 # Screenshots of the Application
-The front page, which shows off the most recently uploaded photos:
+The front page, which shows the most recently uploaded photos:
 
 ![front page](https://github.com/anthonyzhang1/My-Photo-Website/blob/main/.github/front%20page%20posts.png)
 
