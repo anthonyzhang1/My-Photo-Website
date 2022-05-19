@@ -8,8 +8,8 @@ You will need MySQL and NodeJS to run the server.
 
 This application was made in my university's Web Development course, with a few improvements made to the application since then.
 
-# Build Instructions
-You only need to complete the build process once.
+# Installation Instructions
+You only need to complete the installation process once.
 
 ### Step 1: Enter your database credentials into the `config.env` file in the `application` directory.
 Enter your database username in the `DB_USER` field and your database password in the `DB_PASSWORD` field, replacing `root`.\
@@ -23,7 +23,7 @@ Run the following commands from the terminal, assuming the current directory is 
 2. `npm i` (wait for the install to finish before proceeding)
 3. `npm run build_db` (this creates the database and tables in MySQL, if they do not already exist)
 
-#### You have now finished building My Photo Website.
+#### You have now finished installing My Photo Website.
 
 # Run Instructions
 These steps must be repeated each time you wish to start the server.
