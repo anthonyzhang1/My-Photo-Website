@@ -1,5 +1,7 @@
 # My Photo Website
-My Photo Website is a photo sharing website similar to Imgur, but with fewer features.
+My Photo Website is a photo sharing website similar to Imgur, but with fewer features.\
+You can register for an account, view other people's images, upload your own images, and comment on images.\
+You may also search for images with a matching title or description.
 
 This application uses MySQL, Express, and Handlebars. MySQL is the database, Express is the backend, and Handlebars is used for the frontend.\
 You will need MySQL and NodeJS to run the server.
@@ -31,3 +33,16 @@ Run the following commands from the terminal, assuming the current directory is 
 2. `npm start` (starting the server will take a few seconds)
 
 #### The server is now running. You can go to the website's front page by entering `localhost:3000` into your browser's address bar.
+
+# Screenshots of the Application
+The front page, which shows off the most recently uploaded images:
+
+![front page](https://github.com/anthonyzhang1/My-Photo-Website/blob/main/.github/front%20page%20posts.png)
+
+An image's page, which shows the image's title, description, uploader, comments, etc.:
+
+![post page](https://github.com/anthonyzhang1/My-Photo-Website/blob/main/.github/yuan%20shao%20post.png)
+
+Search results for all images which contain the phrase "Atelier" in its title or description:
+
+![atelier search](https://github.com/anthonyzhang1/My-Photo-Website/blob/main/.github/atelier%20search.png)
