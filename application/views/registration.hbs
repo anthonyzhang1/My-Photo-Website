@@ -1,0 +1,31 @@
+<div class="main-content-container" id="registration-page-div">
+    <header class="site-header" id="registration-page-site-header">
+        <h1>Registration Form</h1>
+    </header>
+    <div class="site-content" id="registration-page-site-content">
+        <form id="registration-form" method="POST" action="/users/register" enctype="application/x-www-form-urlencoded">
+            <label for="reg-username">Username</label>
+            <input type="text" id="reg-username" placeholder="Username" name="username" required/>
+            <label for="reg-email">Email</label>
+            <input type="email" id="reg-email" placeholder="Email" name="email" required/>
+            <label for="reg-password">Password</label>
+            <input type="password" id="reg-password" placeholder="Password" name="password" required/>
+            <label for="reg-confirm-password">Confirm Password</label>
+            <input type="password" id="reg-confirm-password" placeholder="Confirm Password" name="confirm-password" required/>
+
+            <div class="age-verification">
+                <input type="checkbox" id="reg-age-verification" name="age-verification" required/>
+                <label for="reg-age-verification">I am 13+ years of age.</label>
+            </div>
+            <div class="TOS-acceptance">
+                <input type="checkbox" id="reg-TOS-acceptance" name="TOS-and-PR-acceptance" required/>
+                <label for="reg-TOS-acceptance">I accept the </label>
+                <a href="/TOS-and-Privacy-Rules" target="_blank" rel="noopener noreferrer">
+                TOS and Privacy Rules</a><label for="reg-TOS-acceptance">.</label>
+            </div>
+
+            <button type="button" onclick="checkRegistrationForm()">Register</button>
+            <a href="/login">Already a user?</a>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/css/shared.css">
+    {{#if css_file}}<link rel="stylesheet" type="text/css" href="/public/css/{{css_file}}">{{/if}}
+    <script defer type="text/javascript" src="/public/js/shared.js"></script>
+    {{#if js_file}}<script type="text/javascript" src="/public/js/{{js_file}}"></script>{{/if}}
+    <title>{{title}}</title>
+  </head>
+  <body>
+    {{> navbar}}
+    {{#if (isNotEmptyObject messages)}}
+    {{> flashmessage}}
+    {{/if}}
+    {{{body}}}
+    {{> footer}}
+
+    {{#if logged}}
+    <script id="logout-button-script">
+      let ele = document.getElementById('log-button');
+      if (ele) {
+        ele.onclick = (event) => {
+          fetch('/users/logout', {
+            method: "POST"
+          })
+          .then((data) => {
+            location.replace('/');
+          });
+        }
+      }
+    </script>
+    {{/if}}
+  </body>
+</html>

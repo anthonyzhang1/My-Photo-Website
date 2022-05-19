@@ -1,0 +1,28 @@
+<div class="main-content-container" id="postimage-page-div">
+    <header class="site-header" id="postimage-page-site-header">
+        <h1>Post Image</h1>
+    </header>
+    <div class="site-content" id="postimage-page-site-content">
+        <form id="postimage-form" method="POST" enctype="multipart/form-data" action="/posts/createPost">
+            <label for="post-title">Post Title</label>
+            <input id="post-title" type="text" name="title" placeholder="Post Title" required/>
+
+            <label for="post-description">Post Description</label>
+            <textarea id="post-description" name="description" rows="8" placeholder="Post Description" required></textarea>
+
+            <div class="upload-image">
+                <label for="choose-file-to-upload">Upload an Image:</label>
+                <input id="choose-file-to-upload" type="file" name="upload-image" required/>
+            </div>
+
+            <div class="acceptable-use">
+                <input type="checkbox" id="acceptable-use-check" name="acceptable-use-check" required/>
+                <label for="acceptable-use-check">I accept the </label>
+                <a href="/acceptable-use-policy" target="_blank" rel="noopener noreferrer">Acceptable Use Policy</a>
+                <label for="acceptable-use-check"> for uploading images.</label>
+            </div>
+
+            <button type="submit">Post Image</button>
+        </form>
+    </div>
+</div>

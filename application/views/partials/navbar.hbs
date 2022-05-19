@@ -1,0 +1,12 @@
+<nav id="nav-bar">
+    <h1 id="site-title" class="left-nav"><a href="/" name="title-link">My Photo Website</a></h1>
+    <input id="search-input" type="text" class="right-nav" placeholder="Image Search" />
+    <button id="search-button" type="submit" class="right-nav">Search</button>
+    <a href="/postimage" id="post-button" class="right-nav">Post</a>
+
+    {{#if logged}}
+    <a href="" onclick="event.preventDefault()" id="log-button" class="right-nav">Log Out</a>
+    {{else}}
+    <a href="/login" id="log-button" class="right-nav">Log In</a>
+    {{/if}}
+</nav>

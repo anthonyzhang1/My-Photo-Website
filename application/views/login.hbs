@@ -1,0 +1,17 @@
+<div class="main-content-container" id="login-page-div">
+    <header class="site-header" id="login-page-site-header">
+        <h1>Login Form</h1>
+    </header>
+    <div class="site-content" id="login-page-site-content">
+        <form id="login-form" method="POST" action="users/login" enctype="application/x-www-form-urlencoded">
+            <label for="login-username">Username</label>
+            <input type="text" id="login-username" placeholder="Username" name="username" required/>
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="Password" name="password" required/>
+
+            <button type="submit">Login</button>
+            <a href="/reset-password">Forgot your password?</a>
+            <a href="/registration">Need an account?</a>
+        </form>
+    </div>
+</div>

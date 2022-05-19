@@ -1,0 +1,30 @@
+#postimage-form > label {
+    display: block;
+    margin: auto auto 0.1rem auto;
+    text-align: left;
+    padding-left: 10%;
+}
+
+#postimage-form > #post-title, #postimage-form > #post-description {
+    display: block;
+    margin: auto auto 0.75rem auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 80%;
+
+    font-family: Helvetica, Arial, sans-serif;
+    color: #350b0b;
+}
+
+.upload-image {
+    display: block;
+    text-align: left;
+    margin: 3% auto 3% 10%;
+}
+
+.acceptable-use {
+    display: block;
+    text-align: left;
+    margin: 5% auto auto 10%;
+}

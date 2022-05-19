@@ -1,0 +1,154 @@
+#image-post-div {
+    display: grid;
+    margin: 0.5%;
+    max-height: 89.2vh;
+    background-color: rgba(102, 161, 70, 0.75);
+
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#image-post-image-div {
+    grid-area: 1 / 1 / 11 / 4;
+    margin: auto;
+}
+
+#image-post-image-div > img {
+    max-width: 100%;
+    max-height: 88.8vh;
+}
+
+#info-section-div {
+    grid-area: 1 / 4 / 4 / 6;
+
+    display: grid;
+    grid-template-rows: min-content repeat(3, 1fr) min-content;
+    grid-template-columns: repeat(2, 1fr);
+
+    background-color: rgba(102, 161, 70, 0.9);
+    border-left: 1px solid black;
+    overflow: auto;
+}
+
+#image-post-title {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: rgb(85, 153, 49);
+}
+
+#image-post-title > h1 {
+    margin: 1% auto 1% auto;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#image-post-description {
+    grid-area: 2 / 1 / 5 / 3;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    overflow: auto;
+}
+
+#image-post-author {
+    grid-area: 5 / 1 / 6 / 2;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    overflow: auto;
+}
+
+#image-post-date {
+    grid-area: 5 / 2 / 6 / 3;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    overflow: auto;
+}
+
+#comment-section-div {
+    grid-area: 4 / 4 / 11 / 6;
+
+    display: grid;
+    grid-template-rows: min-content repeat(7, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+
+    background-color: rgba(102, 161, 70, 0.9);
+    border-left: 1px solid black;
+    overflow: auto;
+}
+
+#comment-title {
+    grid-area: 1 / 1 / 2 / 8; 
+    background-color: rgb(85, 153, 49);
+}
+
+#comment-title > h1 {margin: 1% auto 1% auto;}
+
+#comment-list {
+    grid-area: 2 / 1 / 8 / 8;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    scroll-behavior: smooth;
+    text-align: left;
+}
+
+#comment-list > div[id^=message-] {
+    display: grid;
+    grid-template-rows: .3fr min-content;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "author created"
+    "comment comment";
+
+    gap: .2em;
+    padding: .25rem;
+    margin: .2rem;
+    font-size: 1rem;
+    border: 1px solid rgb(57, 90, 62);
+    border-radius: 5px;
+}
+
+.comment-author {
+    grid-area: author;
+    justify-self: start;
+    color: #952e1e;
+}
+
+.comment-date {
+    grid-area: created;
+    justify-self: end;
+}
+
+.comment-text {
+    grid-area: comment;
+    overflow: auto;
+    max-height: 180px;
+    min-height: 60px;
+    justify-self: start;
+}
+
+#comment-box-background-color {
+    grid-area: 8 / 1 / 9 / 8;
+    background-color: rgb(85, 153, 49);
+}
+
+#comment-box-text {
+    grid-area: 8 / 1 / 9 / 7;
+    margin: 1%;
+    padding: 1%;
+    width: 99%;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: none;
+}
+
+#comment-box-button {
+    grid-area: 8 / 7 / 9 / 8;
+    margin: 5% 5% 5% 5%;
+    border-radius: 5px;
+    font-size: 2vh;
+}
