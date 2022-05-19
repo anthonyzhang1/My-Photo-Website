@@ -15,20 +15,19 @@ Example: `DB_USER=admin`, `DB_PASSWORD=password`.
 
 You probably should not change anything else in `config.env`.
 
-### Step 2: Set up the database and install the dependencies.
-Run the following commands from the terminal, assuming the current directory is `/My-Photo-Website`:
-1. `cd application` (your current directory should now be `/My-Photo-Website/application`)
-2. `npm run build_db` (this creates the database and tables in MySQL. If the database/table already exists,
-the database/table will not be created.)
-3. `npm i` (wait for the install to finish before proceeding)
+### Step 2: Install the dependencies and set up the database.
+Run the following commands from the terminal, assuming the current directory is `.../My-Photo-Website`:
+1. `cd application` (your current directory should now be `.../My-Photo-Website/application`)
+2. `npm i` (wait for the install to finish before proceeding)
+3. `npm run build_db` (this creates the database and tables in MySQL, if they do not already exist)
 
 #### You have now finished building My Photo Website.
 
 # Run Instructions
 These steps must be repeated each time you wish to start the server.
 
-Run the following commands from the terminal, assuming the current directory is `/My-Photo-Website`:
-1. `cd application` (your current directory should now be `/My-Photo-Website/application`)
+Run the following commands from the terminal, assuming the current directory is `.../My-Photo-Website`:
+1. `cd application` (your current directory should now be `.../My-Photo-Website/application`)
 2. `npm start` (starting the server will take a few seconds)
 
 #### The server is now running. You can go to the website's front page by entering `localhost:3000` into your browser's address bar.
