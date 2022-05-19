@@ -27,7 +27,7 @@ async function makeDatabase(connection) {
   if (result && result.warningStatus > 0) {
     const [warningResult, _] = await connection.query("SHOW WARNINGS");
     displayWarningMessage(warningResult[0]);
-  } else console.log("Created Database my_photo_website!");
+  } else console.log("Created Database 'my_photo_website'.");
 }
 
 async function makeUsersTable(connection) {
@@ -49,7 +49,7 @@ async function makeUsersTable(connection) {
   if (result && result.warningStatus > 0) {
     const [warningResult, _] = await connection.query("SHOW WARNINGS");
     displayWarningMessage(warningResult[0]);
-  } else console.log("Created Users Table!");
+  } else console.log("Created Table 'users'.");
 }
 
 async function makePostsTable(connection) {
@@ -77,7 +77,7 @@ async function makePostsTable(connection) {
   if (result && result.warningStatus > 0) {
     const [warningResult, _] = await connection.query("SHOW WARNINGS");
     displayWarningMessage(warningResult[0]);
-  } else console.log("Created Posts Table!");
+  } else console.log("Created Table 'posts'.");
 }
 
 async function makeCommentsTable(connection) {
@@ -108,7 +108,7 @@ async function makeCommentsTable(connection) {
   if (result && result.warningStatus > 0) {
     const [warningResult, _] = await connection.query("SHOW WARNINGS");
     displayWarningMessage(warningResult[0]);
-  } else console.log("Created Comments Table!");
+  } else console.log("Created Table 'comments'.");
 }
 
 (async function main() {
