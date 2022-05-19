@@ -17,7 +17,7 @@ Example: `DB_USER=admin`, `DB_PASSWORD=password`.
 
 You probably should not change anything else in `config.env`.
 
-### Step 2: Install the dependencies and set up the database.
+### Step 2: Install the dependencies and build the database.
 Run the following commands from the terminal, assuming the current directory is `.../My-Photo-Website`:
 1. `cd application` (your current directory should now be `.../My-Photo-Website/application`)
 2. `npm i` (wait for the install to finish before proceeding)
