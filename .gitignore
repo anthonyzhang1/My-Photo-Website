@@ -1,5 +1,5 @@
 # dependencies
-application/node_modules/
+node_modules
 
 # user uploads
 application/public/images/uploads/*

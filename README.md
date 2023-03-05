@@ -1,17 +1,14 @@
 # My Photo Website
-My Photo Website is a photo sharing website similar to Imgur, but with fewer features.\
-You can register for an account, view other people's photos, upload your own photos, and comment on photos.\
-You may also search for photos with a matching title or description.
+My Photo Website is a photo sharing website similar to Imgur, but with fewer features. \
+You can register for an account, view other users' photos, upload your own photos, and comment on photos. You may also search for photos with a matching title or description.
 
-This application uses MySQL, Express, and Handlebars. MySQL is the database, Express is the backend, and Handlebars is used for the frontend.\
-You will need MySQL and NodeJS to run the server.
+My Photo Website uses MySQL, Express, and Handlebars. MySQL is for the database, Express is for the back end, and Handlebars is for the front end. \
+My Photo Website was created for my university's Web Development course in Fall 2021.
 
-This application was made in my university's Web Development course, with a few changes made to the application since then.
-
-#### Note: This application should only be locally hosted because it was not designed entirely with security in mind. This is more a project for learning.
+#### This application was not designed entirely with security in mind. This was more a project for learning.
 
 # Installation Instructions
-You only need to complete the installation process once.
+You only need to complete the installation process once. Also, you will need MySQL and Node.js to run the server.
 
 ### Step 1: Enter your database credentials into the `config.env` file in the `application` directory.
 Enter your database username in the `DB_USER` field and your database password in the `DB_PASSWORD` field, replacing `root`.\
@@ -34,17 +31,4 @@ Run the following commands from the terminal, assuming the current directory is 
 1. `cd application` (your current directory should now be `.../My-Photo-Website/application`)
 2. `npm start` (starting the server will take a few seconds)
 
-#### The server is now running. You can go to the website's front page by entering `localhost:3000` into your browser's address bar.
-
-# Screenshots of the Application
-The front page, which shows the most recently uploaded photos:
-
-![front page](https://github.com/anthonyzhang1/My-Photo-Website/blob/main/.github/front%20page%20posts.png)
-
-A photo's page, which shows the photo's title, description, uploader, comments, etc.:
-
-![post page](https://github.com/anthonyzhang1/My-Photo-Website/blob/main/.github/yuan%20shao%20post.png)
-
-Search results for all photos which contain the phrase "Atelier" in its title or description:
-
-![atelier search](https://github.com/anthonyzhang1/My-Photo-Website/blob/main/.github/atelier%20search.png)
+#### The server is now running. You can go to the home page by entering `localhost:3000` into your browser's address bar.
